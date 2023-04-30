@@ -2,6 +2,10 @@
 
 This API exposes an English to International Phonetic Alphabet (IPA) conversion Tensorflow model. The model is a proof of concept for transforming English text into its corresponding IPA phonetic representation. The end goal of this project is to aid the generation of IPA phonetics dictionaries for various languages and dialects.
 
+## Model Repo
+
+[Sequence to Sequence English to IPA Phonetics Model](https://github.com/OrderAndCh4oS/phonetic-translation-ml-seq2seq-attention)
+
 ## Prerequisites
 
 Before using this API, ensure that you have installed:
