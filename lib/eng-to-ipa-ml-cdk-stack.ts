@@ -1,16 +1,33 @@
 import * as cdk from 'aws-cdk-lib';
-import { Construct } from 'constructs';
-// import * as sqs from 'aws-cdk-lib/aws-sqs';
+import {Duration} from 'aws-cdk-lib';
+import {Construct} from 'constructs';
+import {Cors, LambdaIntegration, RestApi} from "aws-cdk-lib/aws-apigateway";
+import {DockerImageCode, DockerImageFunction} from "aws-cdk-lib/aws-lambda";
+import * as path from "path";
 
 export class EngToIpaMlCdkStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
-    super(scope, id, props);
+    constructor(scope: Construct, id: string, props?: cdk.StackProps) {
+        super(scope, id, props);
 
-    // The code that defines your stack goes here
+        const api = new RestApi(this, 'EngToIpaApi', {
+            defaultCorsPreflightOptions: {
+                allowHeaders: Cors.DEFAULT_HEADERS,
+                allowMethods: Cors.ALL_METHODS,
+                allowOrigins: Cors.ALL_ORIGINS
+            },
+        });
 
-    // example resource
-    // const queue = new sqs.Queue(this, 'EngToIpaMlCdkQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
-  }
+        const engToIpaHandler = new DockerImageFunction(this, 'EngToIpaLambdaFunction', {
+            code: DockerImageCode.fromImageAsset(
+                path.join(__dirname, '../lambdas'),
+                {
+                    cmd: ["eng_to_ipa.index.handler"]
+                }
+            ),
+            memorySize: 4096,
+            timeout: Duration.seconds(120)
+        });
+
+        api.root.addMethod('post', new LambdaIntegration(engToIpaHandler))
+    }
 }

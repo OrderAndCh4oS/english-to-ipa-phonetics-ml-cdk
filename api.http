@@ -1,0 +1,17 @@
+POST https://vhcuq0wsj8.execute-api.eu-west-1.amazonaws.com/prod
+Content-Type: application/json
+
+{
+  "text": "The quick brown fox jumps over the lazy dog"
+}
+
+###
+
+POST http://localhost:9000/2015-03-31/functions/function/invocations
+Content-Type: application/json
+
+{
+  "body": "{\"text\": \"Apricot Apple Avocado\"}"
+}
+
+###

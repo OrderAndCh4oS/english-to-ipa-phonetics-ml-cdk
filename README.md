@@ -1,14 +1,78 @@
-# Welcome to your CDK TypeScript project
+# Seq2Seq English to IPA Phonetics Model API
 
-This is a blank project for CDK development with TypeScript.
+This API exposes an English to International Phonetic Alphabet (IPA) conversion Tensorflow model. The model is a proof of concept for transforming English text into its corresponding IPA phonetic representation. The end goal of this project is to aid the generation of IPA phonetics dictionaries for various languages and dialects.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Prerequisites
 
-## Useful commands
+Before using this API, ensure that you have installed:
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+ - Node.js
+ - AWS CLI
+ - AWS CDK
+ - Docker
+ - PNPM
+
+If you have not installed these prerequisites, please refer to their official documentation for detailed installation instructions.
+
+## Quick Start
+
+1. Clone this repository:
+
+```sh
+git clone https://github.com/OrderAndCh4oS/english-to-ipa-phonetics-ml-cdk
+cd english-to-ipa-phonetics-ml-cdk
+```
+
+2. Install dependencies:
+
+```sh
+pnpm install
+```
+
+3. Deploy your stack via CDK:
+
+```sh
+pnpm cdk:deploy
+```
+
+4. After successful deployment, access the API through provided endpoint URL in the deployment output.
+
+5. To remove the stack from AWS after use, run:
+
+```sh
+pnpm cdk:destroy
+```
+
+## API Documentation
+
+The Seq2Seq English to IPA Phonetics API provides an easy-to-use endpoint for converting written English text into its corresponding IPA phonetic representation.
+
+### POST /translate
+
+Request:
+
+- Content-Type: application/json
+
+- Body:
+
+  ```json
+  {
+      "text": "The quick brown fox jumps over the lazy dog"
+  }
+  ```
+
+Response:
+
+- Content-Type: application/json
+
+- Body:
+
+  ```json
+  {
+      "ipa": "/θˈiː/ /kwˈɪk/ /bɹˈaʊn/ /fˈɒks/ /dʒˈʌmps/ /ˈəʊvɐ/ /θˈiː/ /lˈeɪzi/ /dˈɒɡ/"
+  }
+  ```
+
+## License
+
+This project is licensed under the terms of the MIT license.
