@@ -47,7 +47,7 @@ pnpm cdk:destroy
 
 The Seq2Seq English to IPA Phonetics API provides an easy-to-use endpoint for converting written English text into its corresponding IPA phonetic representation.
 
-### POST /translate
+### POST /
 
 Request:
 
