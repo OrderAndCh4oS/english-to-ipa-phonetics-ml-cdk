@@ -84,4 +84,4 @@ This project is licensed under the terms of the MIT license.
 ## Non-ML Language to IPA Repos
 
 [Phonetics Translator NextJS](https://github.com/OrderAndCh4oS/phonetics-translator-next)
-[Phonetics Translator Scripts](https://github.com/OrderAndCh4oS/phonetics-transliterator)
+[Phonetics Translator Scripts & Dictionaries](https://github.com/OrderAndCh4oS/phonetics-transliterator)
