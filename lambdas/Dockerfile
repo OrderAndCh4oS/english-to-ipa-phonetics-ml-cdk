@@ -19,4 +19,4 @@ RUN poetry install --no-interaction --no-ansi --no-root
 COPY src ${LAMBDA_TASK_ROOT}/
 
 # Set the CMD to your handler (could also be done as a parameter override outside of the Dockerfile)
-CMD [ "eng_to_ipa.index.handler" ]
+CMD [ "ipa_transliteration.index.handler" ]
