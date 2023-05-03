@@ -12,9 +12,21 @@ def handler(event, context):
     body = json.loads(event["body"])
 
     allowed_language_codes = [
+        "cz",
+        "da",
         "de",
+        "el",
         "en_UK",
-        "fr_FR"
+        "en_US",
+        "es_ES",
+        "fi",
+        "fr",
+        "hu",
+        "is",
+        "it",
+        "la",
+        "ru",
+        "sv"
     ]
 
     errors = []
