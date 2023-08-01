@@ -1,0 +1,96 @@
+POST https://iptcyn9bvi.execute-api.eu-west-1.amazonaws.com/prod
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "language_code": "de",
+  "text": "guten"
+}
+
+<> 2023-05-02T174120.200.json
+
+###
+
+POST https://iptcyn9bvi.execute-api.eu-west-1.amazonaws.com/prod
+Content-Type: application/json
+Content-Length: 67
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "language_code": "de",
+  "text": "Auf Wiedersehen dada guten"
+}
+
+<> 2023-05-02T174115.200.json
+
+###
+
+POST https://iptcyn9bvi.execute-api.eu-west-1.amazonaws.com/prod
+Content-Type: application/json
+Content-Length: 61
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "language_code": "de",
+  "text": "Auf Wiedersehen dada"
+}
+
+<> 2023-05-02T174105.200.json
+
+###
+
+POST https://iptcyn9bvi.execute-api.eu-west-1.amazonaws.com/prod
+Content-Type: application/json
+Content-Length: 56
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "language_code": "de",
+  "text": "Auf Wiedersehen"
+}
+
+<> 2023-05-02T174059.200.json
+
+###
+
+POST https://iptcyn9bvi.execute-api.eu-west-1.amazonaws.com/prod
+Content-Type: application/json
+Content-Length: 50
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "language_code": "de",
+  "text": "Guten tag"
+}
+
+<> 2023-05-02T174018.200.json
+
+###
+
+POST https://iptcyn9bvi.execute-api.eu-west-1.amazonaws.com/prod
+Content-Type: application/json
+Content-Length: 46
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "language_code": "de",
+  "text": "Guten"
+}
+
+<> 2023-05-02T174009.200.json
+
+###
+

@@ -1,5 +1,5 @@
 {
-  "app": "npx ts-node --prefer-ts-exts bin/eng-to-ipa-ml-cdk.ts",
+  "app": "npx ts-node --prefer-ts-exts bin/ipa-transliteration-ml-cdk.ts",
   "watch": {
     "include": [
       "**"
